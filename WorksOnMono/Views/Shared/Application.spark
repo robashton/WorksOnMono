@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        <use content="title">Default Title</use>
+    </title>
+    <link href="~/Includes/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.4.2.min.js" ></script>
+    <script type="text/javascript" src="~/Scripts/jquery-ui-1.8.5.custom.min.js" ></script>
+    <script type="text/javascript" src="~/Scripts/jquery.tmpl.js"></script>
+	<script type="text/javascript" src="~/Scripts/jquery.jeditable.js" ></script>
+	<script type="text/javascript" src="~/Includes/js/global.js" ></script>
+	<use content="scripts"></use>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>Does it work on Mono?</h1>
+            </div>
+            <div id="logindisplay">
+                <LogOnUserControl />
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li><a controller="Home" action="Index">Home</a></li>
+                    <li><a controller="Projects" action="Index">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <use content="view"></use>
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

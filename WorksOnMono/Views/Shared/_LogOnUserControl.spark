@@ -1,0 +1,6 @@
+﻿<test if="Request.IsAuthenticated">
+    You are logged in
+    [ <a controller="Home" action="Logout">Sign out</a> ]
+<else />
+    [ <a controller="Home" action="Authenticate">Authenticate</a> ]
+</test>
