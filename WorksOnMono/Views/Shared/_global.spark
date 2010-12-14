@@ -6,7 +6,7 @@
 <use namespace="System.Linq"/>
 <use namespace="System.Collections.Generic"/>
 
-<use namespace="Wom.Projections" />
+<use namespace="Wom.ViewModels" />
 
 <use assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
 <use assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>

@@ -163,10 +163,14 @@
     <Compile Include="ViewModels\CommandResult.cs" />
     <Compile Include="ViewModels\ProjectCommentsInputModel.cs" />
     <Compile Include="ViewModels\ProjectCommentsViewModel.cs" />
+    <Compile Include="ViewModels\ProjectCommentsViewModelFactory.cs" />
     <Compile Include="ViewModels\ProjectIndexInputModel.cs" />
     <Compile Include="ViewModels\ProjectIndexViewModel.cs" />
+    <Compile Include="ViewModels\ProjectIndexViewModelFactory.cs" />
+    <Compile Include="ViewModels\ProjectIndexViewModelItem.cs" />
     <Compile Include="ViewModels\ProjectItemInputModel.cs" />
     <Compile Include="ViewModels\ProjectItemViewModel.cs" />
+    <Compile Include="ViewModels\ProjectItemViewModelFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -198,14 +202,14 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Home\Authenticate.Spark" />
-    <None Include="Views\Home\Index.Spark" />
-    <None Include="Views\Home\Logout.spark" />
-    <None Include="Views\Projects\Index.spark" />
-    <None Include="Views\Shared\Application.spark" />
-    <None Include="Views\Shared\Error.spark" />
-    <None Include="Views\Shared\_global.spark" />
-    <None Include="Views\Shared\_LogOnUserControl.spark" />
+    <Content Include="Views\Home\Authenticate.Spark" />
+    <Content Include="Views\Home\Index.Spark" />
+    <Content Include="Views\Home\Logout.spark" />
+    <Content Include="Views\Projects\Index.spark" />
+    <Content Include="Views\Shared\Application.spark" />
+    <Content Include="Views\Shared\Error.spark" />
+    <Content Include="Views\Shared\_global.spark" />
+    <Content Include="Views\Shared\_LogOnUserControl.spark" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -220,15 +224,14 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>8080</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/WorksOnMono</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost/WorksOnMono</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

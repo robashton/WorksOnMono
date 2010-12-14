@@ -5,10 +5,10 @@ using System.Web;
 
 namespace Wom.ViewModels
 {
-    public class ProjectItemViewModel
+    public class ProjectIndexViewModelItem
     {
         public string Id { get; set; }
-        public string Title { get; set; }
+        public string ProjectTitle { get; set; }
         public string Summary { get; set; }
     }
 }
