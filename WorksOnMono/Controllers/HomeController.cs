@@ -52,7 +52,7 @@ namespace WorksOnMono.Controllers
                 {
                     try
                     {
-                        return openid.CreateRequest(Request.Form["openid_identifier"]).RedirectingResponse.AsActionResult();
+                        return (ActionResult)(Object)openid.CreateRequest(Request.Form["openid_identifier"]).RedirectingResponse.AsActionResult();
                     }
                     catch (ProtocolException)
                     {

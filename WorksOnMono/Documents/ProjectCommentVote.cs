@@ -10,5 +10,6 @@ namespace Wom.Documents
         public string UserId { get; set; }
         public string ProjectId { get; set; }
         public string ProjectCommentId { get; set; }
+        public int Weight { get; set; }
     }
 }

@@ -156,6 +156,7 @@
     </Compile>
     <Compile Include="Indexes\MonoVersionIndex.cs" />
     <Compile Include="Indexes\PackageVersionIndex.cs" />
+    <Compile Include="Indexes\ProjectCommentsIndex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validators\CreateCommentVoteCommandValidator.cs" />
     <Compile Include="Validators\CreateProjectCommandValidator.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="ViewModels\ProjectCommentsInputModel.cs" />
     <Compile Include="ViewModels\ProjectCommentsViewModel.cs" />
     <Compile Include="ViewModels\ProjectCommentsViewModelFactory.cs" />
+    <Compile Include="ViewModels\ProjectCommentsViewModelItem.cs" />
     <Compile Include="ViewModels\ProjectIndexInputModel.cs" />
     <Compile Include="ViewModels\ProjectIndexViewModel.cs" />
     <Compile Include="ViewModels\ProjectIndexViewModelFactory.cs" />
