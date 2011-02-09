@@ -1,0 +1,28 @@
+﻿<html>
+  <head>
+    <title><use content="title">WorksOnMono.com</use></title>
+    <use content="head" />
+	<link rel="stylesheet" type="text/css" href="~/Resources/Css/Reset.css"/>
+	<link rel="stylesheet" type="text/css" href="~/Resources/Css/Layout.css"/>
+	<link rel="stylesheet" type="text/css" href="~/Resources/Css/Style.css"/>
+	<script type='text/javascript' src='~/ThirdParty/jQuery/jquery-1.5.min.js'></script>
+	<script type='text/javascript' src='~/ThirdParty/jQuery/jquery.tmpl.min.js'></script>
+	<script type='text/javascript' src='~/ThirdParty/ko/knockout-1.1.2.js'></script>
+	<script type='text/javascript' src='~/Resources/js/api.js'></script>
+  </head>
+  <body>
+    <div id="header">
+      <use content="header">
+        <div></div>
+      </use>
+    </div>
+    <div id="main">
+      <use content="view"/>
+    </div>
+    <div id="footer">
+      <use content="footer">
+        <div></div>
+      </use>
+    </div>
+  </body>
+</html>

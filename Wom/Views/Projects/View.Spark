@@ -1,0 +1,30 @@
+﻿<h1 data-bind="text: Project.Title"></h1>
+
+<div data-bind="template: 'projectview'"></div>
+<div data-bind="template: 'commentview'"></div>
+
+<script type="text/html" id="projectview">
+	<div>{{= Project.Description}}</div>
+	<p>The project homepage can be located at: <a href="{{= Project.ProjectUrl}}">{{= Project.ProjectUrl}}</a></p>
+	<p>(Listing added by {{= Project.Creator.Name}})</p>
+</script>
+
+<script type="text/html" id="commentview">
+  {{each Comments}}      
+    <h6>({{= Score}}) {{= Functional }}</h6>
+    <p>{{= Description }}</p>
+    <ul>
+      <li>Mono: {{= MonoVersion }}</li>
+      <li>Project: {{= ProjectVersion }}</li>
+    </ul>
+    <p>{{= User.Name }}</p>
+  {{/each}}
+</script>
+
+<script type="text/javascript">
+  var model = {
+  Project: wom.getProject(43),
+  Comments: wom.getPopularProjectComments(43, 0, 10)
+  };
+  ko.applyBindings(model);
+</script>
