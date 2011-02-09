@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F1C62A5E-0012-48A0-8DE4-6E97487D1022}</ProjectGuid>
+    <ProjectGuid>{F3F25F81-49B1-4E93-9933-6ACC32869E6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WorksOnMono.Tests</RootNamespace>
@@ -31,46 +31,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.NRefactory, Version=3.0.0.3800, Culture=neutral, PublicKeyToken=efe927acf176eea2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ICSharpCode.NRefactory">
       <HintPath>..\_LIBS\RavenDB\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="log4net">
       <HintPath>..\_LIBS\RavenDB\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.Net, Version=2.9.2.1, Culture=neutral, PublicKeyToken=02f879aa45933051, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Lucene.Net">
       <HintPath>..\_LIBS\RavenDB\Lucene.Net.dll</HintPath>
     </Reference>
     <Reference Include="Moq">
       <HintPath>..\_LIBS\Moq\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b9a188c8922137c6, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Newtonsoft.Json">
       <HintPath>..\_LIBS\RavenDB\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\_LIBS\NUnit\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Abstractions">
       <HintPath>..\_LIBS\RavenDB\Raven.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Client.Embedded, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Client.Embedded">
       <HintPath>..\_LIBS\RavenDB\Raven.Client.Embedded.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Client.Lightweight, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Client.Lightweight">
       <HintPath>..\_LIBS\RavenDB\Raven.Client.Lightweight.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Database">
       <HintPath>..\_LIBS\RavenDB\Raven.Database.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Http, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Raven.Http">
       <HintPath>..\_LIBS\RavenDB\Raven.Http.dll</HintPath>
     </Reference>
     <Reference Include="Raven.Munin">
@@ -79,18 +70,15 @@
     <Reference Include="Raven.Storage.Managed">
       <HintPath>..\_LIBS\RavenDB\Raven.Storage.Managed.dll</HintPath>
     </Reference>
-    <Reference Include="Spatial.Net, Version=2.9.1.2, Culture=neutral, PublicKeyToken=02f879aa45933051, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Spatial.Net">
       <HintPath>..\_LIBS\RavenDB\Spatial.Net.dll</HintPath>
     </Reference>
-    <Reference Include="SpellChecker.Net, Version=2.9.2.1, Culture=neutral, PublicKeyToken=36573b2a49807bd1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SpellChecker.Net">
       <HintPath>..\_LIBS\RavenDB\SpellChecker.Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -98,24 +86,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandHandlers\CreateCommentVoteCommandHandlerTests.cs" />
-    <Compile Include="CommandHandlers\CreateProjectCommandHandlerTests.cs" />
-    <Compile Include="CommandHandlers\CreateProjectCommentCommandHandlerTests.cs" />
-    <Compile Include="CommandHandlers\EnsureUserExistsCommandHandlerTests.cs" />
-    <Compile Include="Controllers\ProjectsControllerTests.cs" />
+    <Compile Include="Commands\WhenCreatingNewComment.cs" />
+    <Compile Include="Commands\WhenCreatingANewProject.cs" />
+    <Compile Include="Commands\WhenCreatingANewProjectComment.cs" />
+    <Compile Include="Commands\WhenEnsuringAUserExists.cs" />
     <Compile Include="LocalRavenTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\ProjectCommentsViewModelFactoryTests.cs" />
-    <Compile Include="ViewModels\ProjectIndexViewModelFactoryTests.cs" />
-    <Compile Include="ViewModels\ProjectItemViewModelFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WorksOnMono\WorksOnMono.csproj">
-      <Project>{1995B66B-C368-4C9A-BCE3-311E6234412F}</Project>
+    <ProjectReference Include="..\Wom\WorksOnMono.csproj">
+      <Project>{1D346135-6623-4C20-A470-8FAD317EF1C7}</Project>
       <Name>WorksOnMono</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Behaviours\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

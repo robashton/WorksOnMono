@@ -1,4 +1,0 @@
-﻿<content name="title">But does it work on Mono?</content>
-<h2>But does it work on Mono?</h2>
-<p>It is high time that creators of OSS .NET frameworks started to think about cross-platform use of their frameworks and applications, so let's make it happen.</p>
-<p>By grouping together and focusing on the compatability issues in existing OSS frameworks, we can hopefully start to get with the program and get our .NET apps running elsewhere other than Windows.</p>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Raven.Client.Client;
 using Raven.Database.Config;
-using WorksOnMono.Indexes;
+using Wom.Indexes;
 using Raven.Client.Indexes;
 using NUnit.Framework;
 using System.Threading;
